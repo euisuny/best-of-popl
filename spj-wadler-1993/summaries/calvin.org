@@ -1,0 +1,60 @@
+* Summary
+
+  This paper introduces the notion of monads for performing I/O in a
+  pure (and "lazy") functional programming language like Haskell, and
+  compares this method against two others, continuations, and
+  "dialogues" (or lazy streams).
+
+** Dialogues
+
+  Dialogues were the initial idea for how to perform IO in
+  Haskell. The idea being that you would have a lazy list of
+  responses, and you would produce a lazy list of requests.
+
+  #+begin_src haskell
+    type Dialogue = [Response] -> [Request]
+  #+end_src
+  
+  Whenever you want to perform an IO action, like printing the
+  character 'H' the main function would yield ~Putc 'H'~ in the
+  request list, and then an external wrapper would read the request
+  and put a response in the response list. This has several problems:
+
+  - It's easy to get off-by-one errors and accidentally read the wrong
+    responses.
+  - Response data type needs a constructor for every possible response.
+  - NOT COMPOSABLE. How would you take two Dialogues and combine them?
+
+** Continuations
+
+   Make IO primitives be continuations. This seems to work pretty well
+   too, especially since monads and continuations are so linked
+   together. Main difference here seems to be performance.
+
+** IO Monad
+
+   #+begin_src haskell
+     type IO a = World -> IORes a
+     data IORes a = MkIORes a World
+   #+end_src
+
+   IORes pairs a result and a world, which is useful for keeping track
+  of the dependencies between effects.  One thing that I found
+  interesting is the use of World. While I have been aware of "World"
+  in Haskell, it seemed a bit silly to include it when, as the paper
+  points out, effects happen immediately when calling. However, the
+  paper does address this issue, and it seems that the point of World
+  is to keep the dependencies between effectful functions, enforcing
+  the expected sequential ordering of effects. This also means that
+  they can basically have the compiler optimize functions with effects
+  just the same as any other function, as it has to preserve these
+  links, which is pretty elegant!
+
+** Other notes
+
+   Having the "one small primitive you need to implement everything"
+   be "call any C program" is... I mean, it is a powerful primitive
+   that's for sure.
+
+   Might be useful to go over the performance differences between the
+   IO monad and continuations in more detail.
