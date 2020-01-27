@@ -1,0 +1,3 @@
+In type theory,
+stateful computation,
+all is monadic.
