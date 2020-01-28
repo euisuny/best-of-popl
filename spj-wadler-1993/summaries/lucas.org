@@ -3,14 +3,14 @@ Ah 1992... Back when there were only 2 Batman movies, 2 Home Alones, and just su
 
 ** Implementation
 At the bottom, the IO monad makes calls to underlying OS protocols using C. Explaining how to get this to play nice with the Haskell typechecker takes up much of the paper. One step above the bottom, there are two functions provided from which you can build the rest of the IO monad.
-#+begin-src haskell
-getcIO :: IO Char
-putcIO :: Char -> IO ()
-#+end-src
+	#+begin_src haskell
+		getcIO :: IO Char
+		putcIO :: Char -> IO ()
+	#+end_src
 These functions have the expected semantics. Or at least I expect that they do, I didn't read closely enough to tell. To build up actually useful IO programs, you need the bind operator
-#+begin-src haskell
+#+begin_src haskell
 bindIO :: IO a -> (a -> IO b) -> IO b
-#+end-src
+#+end_src
 To understand how this function works, think of an element of IO a as a value that will be able to produce a value of type a once it is given some help from the extended operating system (you+ your computer). getcIO waits for the user to input a character and then produces that character. putcIO prints a character and then waits for some system confirmation that the character was written. With this in mind, bind takes an IO, waits for it to finish, extracts its value, applies the continuation to that value and then, G-d willing, you have an IO b value.
 
 ** Earth Shattering Revelations
