@@ -1,0 +1,19 @@
+* History
+Ah 1992... Back when there were only 2 Batman movies, 2 Home Alones, and just suggesting to use monads in Haskell could get you a POPL submission. It was a simpler time. This paper's main contribution is proposing an implementing a monadic approach to input and output. This IO monad would come to replace the previously used Dialogue type, represented abstractly as a lazily evaluated stream that hangs on user input when queried.
+
+** Implementation
+At the bottom, the IO monad makes calls to underlying OS protocols using C. Explaining how to get this to play nice with the Haskell typechecker takes up much of the paper. One step above the bottom, there are two functions provided from which you can build the rest of the IO monad.
+#+begin-src haskell
+getcIO :: IO Char
+putcIO :: Char -> IO ()
+#+end-src
+These functions have the expected semantics. Or at least I expect that they do, I didn't read closely enough to tell. To build up actually useful IO programs, you need the bind operator
+#+begin-src haskell
+bindIO :: IO a -> (a -> IO b) -> IO b
+#+end-src
+To understand how this function works, think of an element of IO a as a value that will be able to produce a value of type a once it is given some help from the extended operating system (you+ your computer). getcIO waits for the user to input a character and then produces that character. putcIO prints a character and then waits for some system confirmation that the character was written. With this in mind, bind takes an IO, waits for it to finish, extracts its value, applies the continuation to that value and then, G-d willing, you have an IO b value.
+
+** Earth Shattering Revelations
+
+From how this paper describes the Dialogue type, I don't understand how anyone wrote any real Haskell programs. I can only conclude that they didn't. It is possible that they still haven't.
+
