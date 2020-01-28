@@ -3,10 +3,10 @@ Ah 1992... Back when there were only 2 Batman movies, 2 Home Alones, and just su
 
 ** Implementation
 At the bottom, the IO monad makes calls to underlying OS protocols using C. Explaining how to get this to play nice with the Haskell typechecker takes up much of the paper. One step above the bottom, there are two functions provided from which you can build the rest of the IO monad.
-	#+begin_src haskell
-		getcIO :: IO Char
-		putcIO :: Char -> IO ()
-	#+end_src
+#+begin_src haskell
+getcIO :: IO Char
+putcIO :: Char -> IO ()
+#+end_src
 These functions have the expected semantics. Or at least I expect that they do, I didn't read closely enough to tell. To build up actually useful IO programs, you need the bind operator
 #+begin_src haskell
 bindIO :: IO a -> (a -> IO b) -> IO b
