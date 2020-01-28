@@ -1,3 +1,5 @@
 when haskell has shit  
+
 design decisions to fix  
+
 only try monads
