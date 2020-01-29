@@ -8,3 +8,4 @@ Our goal is to ask *fundamental* questions about the principles of programming l
 
 ## Meetings
 * *Jan 28th, 2020* : S.P Jones, P. Wadler. **Imperative Functional Programming** (1993).
+* *Feb 12th, 2020* : M. Tofte, J.P. Talpin. **Implementation of the Typed Call-by-Value lambda-calculus using a Stack of Regions** (1994).
