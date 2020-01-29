@@ -1,0 +1,11 @@
+Haskell existed before it had an IO monad?
+
+type definition
+type IO a = World -> a * World
+return x = \w -> (x, w)
+mx >>= f = \w0 -> let (x, w1) = (mx w0) in (f x w1)
+
+Has the multiple array issue mentioned in the paper been fixed?
+I have never written a Haskell program,
+but I would guess so since there's apparently such a thing as a state monad,
+which sounds like it would handle this sort of thing.
