@@ -1,0 +1,14 @@
+* Summary
+
+Benjamin asked for influential papers that are poorly written. I think this might be one of them. As far as I can tell they wrote a translation from a CBV lambda calculus to a lambda calculus with explicit memory usage. I don't quite understand the purpose of that. The target language seems way too far from any actual assembly language for this implementation to mean anything to me. Maybe the point is to figure out an algorithm to utilize space for a functional programming, and be able to reason about telling a function where its workspace is? In any case, I don't see much discussion of why the fuck any of this is useful.
+
+* Syntax
+
+p is a region. r is a region name. ρ is a region variable. Regions are either names or variables. The letter ρ should never be used (except I guess in actual Greek or whatever), and if they ever are used (which should be never) then you should not be allowed to use the letter p.
+
+* Bad Paragraph
+"We do not expect always to be able to determine the size of a region when we allocate it. Part of the reason for this is that we consider recursive datatypes, such as lists, a must; the size of a region which is supposed to hold the spine of a list, say, cannot in general be determined when the region is allocated. Therefore, not all regions can be allocated on a hardware stack, although regions of known size can."
+
+This was a bad paragraph. Mads Tofte should be ashamed of it.
+
+
