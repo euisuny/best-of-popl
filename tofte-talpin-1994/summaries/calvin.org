@@ -1,0 +1,14 @@
+* Summary
+  
+I found this paper hard to grok. My rough understanding of the paper
+is that they want to use "regions" which are inferred statically in
+order to determine when to free memory...
+
+* Comments
+
+  - This is a paper written by absolute monsters who use ρ, p, r, and
+    slightly different r all to mean distinct but related things.
+  - For the love of god just say $x \in BLAH$ instead of giving me
+    another variable ranging over "denumerably infinite" sets.
+  - Did everybody lose self-esteem after SPJ and Philip Wadler won
+    POPL the previous year?
