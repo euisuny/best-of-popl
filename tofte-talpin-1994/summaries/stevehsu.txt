@@ -1,0 +1,14 @@
+region based memory management
+
+Regions are similar to activation frames in imperative languages.
+The authors use them together with a heap to manage memory.
+Their goal is to reduce the memory overhead of functional programs.
+They embed regions into the type system of a functional language
+in order to enable automatic allocation and deallocation
+(this automation also requires effect inference).
+
+The middle of the paper gives the language and algorithms for region
+management in full detail.
+
+Their implementation performs well on several benchmarks.
+The end also mentions that adding garbage collection is nontrivial.
