@@ -1,0 +1,19 @@
+lexically scoped, object oriented, distributed
+
+Sites are address spaces. As such, they contain memory locations, which in
+turn can hold values. Threads have the usual definition. Identifiers can be
+constants or variables (references). Values can be objects, arrays, closures,
+or basic values (integers, strings). Closures can be transmitted over the
+network as program text together with a table giving values to the free
+identifiers in the text. This table enables distributed lexical scoping.
+
+definition of objects and their operations
+
+An expression containing an object o is a "self-inflicted operation" on o if o
+is the host object of the current method. Operations that are not
+self-inflicted are said to be external. A protected object cannot be
+externally updated, cloned, or aliased. A serialized object requires all
+external operations to hold a mutex. Two Obliq sites can communicate by
+sharing objects through a name server.
+
+examples of distributed programming techniques
