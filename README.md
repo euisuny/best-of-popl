@@ -9,6 +9,5 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 * *Jan 29th, 2020* : S.P Jones, P. Wadler. **Imperative Functional Programming** (1993).
 * *Feb 12th, 2020* : M. Tofte, J.P. Talpin. **Implementation of the Typed Call-by-Value lambda-calculus using a Stack of Regions** (1994).
 * *Feb 26th, 2020* : L. Cardelli. **A Language with Distributed Scope** (1995).
-* *Mar 11th, 2020* : B. Steensgaard. **Points-to analysis in almost linear time** (1996).
-
+* *Mar 18th, 2020* : B. Steensgaard. **Points-to analysis in almost linear time** (1996).
 
