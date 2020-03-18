@@ -1,0 +1,4 @@
+The paper uses a type system to implement a points-to analysis. Each type
+represents a set of possible locations to which a variable can point. The type
+inference algorithm processes each program statement once, solving typing
+constraints as necessary to make the program well-typed.
