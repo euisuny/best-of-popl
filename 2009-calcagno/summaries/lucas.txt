@@ -1,0 +1,4 @@
+So it looks like the general idea of this paper is to use biabduction to infer separation logic predicates for a static analysis of large C programs.
+Abduction seems to be the process of figuring out what extra assumptions you need in order to infer a target proposition. Biaduction seems to mean that you are assuming both extra assumptions and goals  but this is simplified by the whole separtion of the store thing.
+It introduces the concept of anti-frames (missing portions of the state) to complement frames (portions of the state not touched by an operation).
+Many of the example specifications seem to effectively be types.
