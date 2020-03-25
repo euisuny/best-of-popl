@@ -18,7 +18,7 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 
 - *Apr 1, 2020:* George Necula. **Proof-carrying Code** (1997)
 
-- *Apr 1, 2020:* Greg Morrisett, David Walker, Karl Crary, and Neal Glew. **From System F to Typed Assembly Language** (1998).
+- *Apr 15, 2020:* Greg Morrisett, David Walker, Karl Crary, and Neal Glew. **From System F to Typed Assembly Language** (1998).
 
 - *Apr 29, 2020:* Andrew C. Myers. **JFlow: Practical Mostly-Static Information Flow Control** (1999).
 
