@@ -52,3 +52,5 @@ The ideas in this paper are fundamental to the Infer static analyzer, which has 
 ### Questions
 
 - The proof rules for solving bi-abduction questions does not give the "minimal" answer, as the author's admit. I'm curious what can be said about the method in terms of expressiveness and completeness.
+
+- Additionally, and more fundamentally, the bi-abduction question is a bit of a strange one compared to the abduction question. In what sense is the result sound? What would be a way of framing the problem so that the answer is unique, or defining minimality in some sense? I understand that in the paper, they actually solve abduction first P * Q |- R * true, and then find S after that. So that should contain the key to the answer...and I also think that the restricted logical disjointness implicit in * is key here.
