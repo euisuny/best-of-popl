@@ -43,6 +43,7 @@ P * Q |- R.
 ```
 
 Then the bi-abduction part is that, instead of just inferring a weak extra condition under which R holds, we also want to infer the co-version of that. Given P and R, we want to infer both Q and S such that
+
 ```
 P * Q |- R * S.
 ```
