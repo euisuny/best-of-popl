@@ -32,7 +32,7 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 
   - Samin Ishtiaq and Peter W. O'Hearn. **BI as an Assertion Language for Mutable Data Structures** (2001).
 
-- *Apr 8, 2020:* ???
+- *Apr 8, 2020:* Lenses! Nate Foster, Michael B. Greenwald, Jonathan T. Moore, Benjamin C. Pierce, Alan Schmitt. **Combinators for Bidirectional Tree Transformations: A Linguistic Approach to the View Update Problem** (2005).
 
 - *Apr 22, 2020:* ???
 
@@ -47,8 +47,6 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 - Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
 
 - Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
-
-- Nate Foster, Michael B. Greenwald, Jonathan T. Moore, Benjamin C. Pierce, Alan Schmitt. **Combinators for Bidirectional Tree Transformations: A Linguistic Approach to the View Update Problem** (2005).
 
 - Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
 
