@@ -19,7 +19,12 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 
 ## Extra Meetings -- Recent Papers
 
-* *Mar 25, 2020:* Cristiano Calcagno, Dino Distefano, Peter W. O'Hearn, Hongseok Yang. **Compositional shape analysis by means of bi-abduction** (2009).
+* *Mar 25, 2020:* Two papers, focusing on the first:
+
+  - Cristiano Calcagno, Dino Distefano, Peter W. O'Hearn, Hongseok Yang. **Compositional shape analysis by means of bi-abduction** (2009).
+
+  - Samin Ishtiaq and Peter W. O'Hearn. **BI as an Assertion Language for Mutable Data Structures** (2001).
+
 * *Apr 8, 2020:* ???
 * *Apr 22, 2020:* ???
 * *May 6, 2020:* ???
@@ -34,4 +39,3 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 * Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
 * David F. Bacon, Perry Cheng, VT Rajan. **A real-time garbage collector with low overhead and consistent utilization** (2003).
 * George C. Necula, Scott McPeak, and Westley Weimer. **CCured: Type-Safe Retrofitting of Legacy Code** (2002).
-* Samin Ishtiaq and Peter W. O'Hearn. **BI as an Assertion Language for Mutable Data Structures** (2001).
