@@ -1,8 +1,18 @@
-## "Summary"
-
-I didn't get past the introduction because I had to read up a bit on separation logic instead. So I will briefly state what is separation logic and then where does this paper fall.
+## Summary
 
 ### Separation logic
+
+When I was reading the introduction I realized that I needed a crash course on separation logic. So, here is a very rough summary, based on looking briefly at the following papers:
+
+- 2001 best paper (Ishtiq and O'Hearn, one of the foundational papers in separation logic)
+
+- Papers suggested by Irene and Yannick:
+
+  - John Reynolds' Survey: https://www.cs.cmu.edu/~jcr/seplogic.pdf
+
+  - Introduction to this paper: https://www.chargueraud.org/research/2020/seq_seplogic/seq_seplogic.pdf
+
+  - Reynolds' Notes: https://www.cs.cmu.edu/afs/cs.cmu.edu/project/fox-19/member/jcr/www15818As2011/ch1.pdf (I didn't get to this one).
 
 Separation logic is like Hoare logic but allows for stating properties of the entire heap of memory instead of just properties about a specific state. So, the statement
 
@@ -15,6 +25,7 @@ means that the heap is split into two parts, one where P holds and one where Q h
 ```
 P -* Q
 ```
+
 which says, basically, that if you adjoin some heap satisfying P, then the resulting heap satisfies Q.
 
 I guess there is a difference between "separation logic" and "concurrent separation logic" but I did not get that far.
@@ -31,10 +42,16 @@ The core idea of the static analysis is an idea called *bi-abduction*. The autho
 P * Q |- R.
 ```
 
-Then the bi-abduction part is that, instead of just inferring a weak extra condition under which R holds, we also want to infer the co-version of that, I think it would be a strongest condition that must *not* hold, or something.
+Then the bi-abduction part is that, instead of just inferring a weak extra condition under which R holds, we also want to infer the co-version of that. Given P and R, we want to infer both Q and S such that
+
+```
+P * Q |- R * S.
+```
 
 The ideas in this paper are fundamental to the Infer static analyzer, which has been deployed widely and effectively at Facebook.
 
-### ~~~Questions~~~ Comments
+### Questions
 
-I think I needed to spend more time on this paper, 1 hour was not enough.
+- The proof rules for solving bi-abduction questions does not give the "minimal" answer, as the author's admit. I'm curious what can be said about the method in terms of expressiveness and completeness.
+
+- Additionally, and more fundamentally, the bi-abduction question is a bit of a strange one compared to the abduction question. In what sense is the result sound? What would be a way of framing the problem so that the answer is unique, or defining minimality in some sense? I understand that in the paper, they actually solve abduction first P * Q |- R * true, and then find S after that. So that should contain the key to the answer...and I also think that the restricted logical disjointness implicit in * is key here.
