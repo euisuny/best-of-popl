@@ -1,0 +1,46 @@
+* Proof-Carrying Code
+** Summary
+Programs often rely on untrusted external libraries. The paper provides a way of
+certifying these untrusted libraries so that the programs can be developed on
+more robust beliefs [fn:1]. The certification method is to make such a library
+carry its specification and proofs that its clients can examine.
+
+The certification method is pretty standard [fn:2]: generate verification
+conditions (VCs) from the source code, write down the invariants and the
+specifications that cannot be automatically inferred, and have an automatic
+theorem prover to prove all VCs are met.
+
+The client of these proof-carrying libraries can verify that a proof is indeed a
+proof validating all the VCs. And as long as there is no change to the library,
+the validation process does not need to be executed again. Because the
+validation process can be performed prior to program execution, it has no
+run-time overhead.
+
+[fn:1] I say beliefs because things such as formalization gaps would still
+exist).
+
+[fn:2] There are many verification works you can find today follow the same
+methodology, so with perspectives of a person working on verification today, I
+don't see novelty in this part. However, maybe this was not widely accepted yet
+at that time?
+
+** Comments
+The paper offers a very clean way of connecting different programs written in
+possibly different programming languages by using a logic framework as the
+"glue". The methodology is intuitive, sound, and does not pose run-time
+overheads.
+
+However, there are many problems remain unsolved from a retrospective
+perspective. First, just as there are many programming languages, there are many
+logic frameworks. And in each logic framework, there may be many different ways
+of writing a specification. For example, one library may be using temporal
+logic, while another library is using separation logic. And even when using the
+same specification method, different libraries may make different assumptions
+over the same thing---for example, they may be using different memory
+models. You will find a lot of problems like this in the DeepSpec project :)
+
+Second, there is still a large formalization gap. For example, the VC generator
+has to be trusted, and the compiler has to be trusted as well. Of course, almost
+every formalization work has some formalization gap, but it seems that the
+formalization gap would be a big challenge when scaling up the methodology to
+real-world use.
