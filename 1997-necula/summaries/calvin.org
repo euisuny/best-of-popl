@@ -1,0 +1,40 @@
+* Summary
+
+  This paper presents the notion of proof carrying code (PCC). The
+  idea is to package the binaries with a proof of some safety
+  properties that the "consumer" of the code can easily and
+  efficiently verify before actually running the code. The primary
+  example is showing that an assembly language procedure follows the
+  data layout of an ML variant. The assembly program can be annotated
+  with different invariants using an INV pseudoinstruction, which is
+  primarily used for loop invariants, but can be used anywhere in the
+  code. A verification condition is then computed by walking through
+  the code in a kind of Hoare-logic kind of way and building up a
+  predicate. The "code producer" also produces a proof of this
+  verification condition in LF, which it serializes into a binary
+  format and passes to the code consumer along with the code. The
+  consumer then validates the LF proof.
+
+  They used PCC in a previous paper to validate the safety of some
+  packet filtering code. This allowed user-space applications to
+  register custom predicates to run in the kernel's memory space
+  safely, even though these were written in native code. The previous
+  solution was to use a kernel space interpreter for a restricted
+  programming language, which was 10x slower.
+
+* Questions
+
+  - It seems like the proof is pretty big compared to the code... I
+    wonder how this plays out with a larger chunk of code?
+    + After validating the proof you should be able to throw it out, though.
+  - Has any work been done on doing this in a sequential fashion, like
+    how WASM is striving for this linear compile time? Might be nice
+    to be able to ship code and proof along in a way that it can be
+    checked while it is being downloaded... Or something.
+
+* Comments
+
+  - Holy shit Alpha! That's amazing.
+  - reminds me a bit of permission models, like say for android.
+    + would it be feasible to use systems like these for verifying
+      apps behave (e.g., don't leak a password to the internet)?
