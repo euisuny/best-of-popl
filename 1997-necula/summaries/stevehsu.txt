@@ -1,0 +1,19 @@
+BPF is still a widely used part of the Linux kernel. It only added support for
+loops a few months ago
+(https://www.netronome.com/blog/optimizing-bpf-smaller-programs-greater-performance/)
+and even now it's limited to "bounded loops." Maybe proof-carrying code would
+allow more flexibility, and checking proofs as opposed to generating them
+might help avoid arbitrary code execution bugs
+(https://blog.aquasec.com/ebpf-vulnerability-cve-2017-16995-when-the-doorman-becomes-the-backdoor).
+
+A lot of the successes they reported (eg. this binary only had 730 bytes; this
+packet filter written in assembly is ten times faster than the BPF equivalent)
+remind me how far computers have come since the '90s. Now, no one cares that a
+"hello world" program hand-written in x86 assembly compiles to 8.6kb of ...
+something (https://drewdevault.com/2020/01/04/Slow.html).
+
+I don't think I've ever used a certifying compiler. I wonder what their
+intended use case was. By best guess is something along the lines of
+"recompiling code is expensive and I want to ship a binary with a type safety
+proof instead of sending the source code." I suspect that today, we would just
+send the source code and accept the cost of recompilation.
