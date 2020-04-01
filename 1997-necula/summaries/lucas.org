@@ -1,0 +1,4 @@
+* Summary
+This paper introduces a system of proof carrying code (PCC). The general idea is that your system, in addition to expecting code to run, expects to be provided a checkable proof that the code follows all safety properties. They describe how you can build this proof alongside the code with the compiler for a strongly typed language. They also described how you can write a program that generates verification condition (if you have annotated loops with invariants).
+
+They talk about about using this for FFI's which is an interesting idea for interoperability withsafe and non-safe languages.
