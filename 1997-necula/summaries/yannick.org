@@ -26,7 +26,16 @@
   invariants at control-flow relevant points, and that the overall resulting hoare triplet is suitable
   at call site via the typing rules provided.
 
-* Note
-  
-  Kinda awkward that the loop invariant at the assembly-level talks about ML-level types, isn't it?
-  
+* Notes
+   
+** Kinda awkward that the loop invariant at the assembly-level talks about ML-level types, isn't it?
+
+** Mapping the implementations in each languages to invariants at the ML level seems difficult.
+   Like what would the example become if we implement the sum function in C now?
+
+** Everything has to be redesigned for each language, for each invariant of interest
+   So really the application to ML is nice, but the overall sell of methodology is a bit of a stretch it feels.
+   But I guess the idea of delegating the checking of the proof was novel.
+
+** Yao said: temporal ... separation... they may be using different memory models
+   Kinda disagree I guess?
