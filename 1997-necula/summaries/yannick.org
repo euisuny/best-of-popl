@@ -1,0 +1,32 @@
+* Summary
+
+  The paper introduces (or rather expands on) the Proof Carrying Code
+  methodology, and provide two instances of its use, one to link 
+  memory safe assembly code to ML code, and another for safe communication
+  over a network.
+
+  The basic idea is to find a way to link our code, known to satisfy dynamic guarantees,
+  to some unknown code, such that the resulting closed program still satisfies the same
+  guarantees.
+  The typical approach relies on trusting an external source and using crypto to guarantee
+  that the source vouch for the external code. PCC introduces a semantic guarantee.
+
+  The high-level idea is reminiscent of semantic soundness approaches, in the case of memory
+  safety in particular: express the semantic guarantee that your type system provides you, and
+  require from the provider of the external code to give you a proof that the semantic judgment
+  is valid, in a format that you can yourself check efficiently.
+  Assuming that your semantic judgment is compositional as it shall be, you can plug stuff safely.
+
+  Instantiated to ML, this means that they fix their low level memory model over which they'll execute,
+  provide typing rules deriving from typing judgments semantic facts about the memory that should be read
+  as contracts, or invariants, that should be maintained.
+  
+  At the assembly level, they use first-order-based Floyd annotations, with loops manually annotated,
+  to compute via weakest-precondition the WP at each code point, and check both that they entail the
+  invariants at control-flow relevant points, and that the overall resulting hoare triplet is suitable
+  at call site via the typing rules provided.
+
+* Note
+  
+  Kinda awkward that the loop invariant at the assembly-level talks about ML-level types, isn't it?
+  
