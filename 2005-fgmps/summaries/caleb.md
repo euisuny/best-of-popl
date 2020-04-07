@@ -21,7 +21,7 @@ The rest of the paper is defining a bunch of combinators for constructing these 
 
 ----
 
-(The last question can be ignored, since I answered it myself, below.)
+(The following last question can be ignored, since I answered it myself, below.)
 
 3. In the introduction, they say there is a tradeoff between expressiveness and robustness, and suggest they make some compromises on expressiveness. But then the actual framework for lenses seems very general, it even has recursion so you should be able to do practically anything. So what do they mean?
 
