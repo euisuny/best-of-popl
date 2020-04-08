@@ -34,9 +34,11 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 
 - *Apr 8, 2020:* Lenses! Nate Foster, Michael B. Greenwald, Jonathan T. Moore, Benjamin C. Pierce, Alan Schmitt. **Combinators for Bidirectional Tree Transformations: A Linguistic Approach to the View Update Problem** (2005).
 
-- *Apr 22, 2020:* ???
+- *Apr 22, 2020:* Break week
 
-- *May 6, 2020:* ???
+- *May 6, 2020:* Compcert! Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
+
+- *May 20, 2020:* ???
 
 ## Unplanned
 
@@ -45,8 +47,6 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 - Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
 
 - Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
-
-- Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
 
 - Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
 
