@@ -1,0 +1,45 @@
+* Summary
+
+  This paper takes the reader through a lovely little walk from System
+  F to TAIL, a typed assembly language. Typed assembly languages share
+  some of the same advantages as PCC (for instance, ensuring that
+  assembly code abides by the data layout of a higher level language,
+  and doesn't break abstractions), which we covered earlier, but TAL
+  is less expressive and permits fewer optimizations. However, TAL
+  provides higher-level abstractions than PCC for compiler writers ---
+  so compiling languages with higher-order functions and data types
+  can be simpler.
+
+  The paper walks through all of the translations from various
+  intermediate languages from a System F variant (with general
+  recursion) all the way to TAL. This process involves:
+
+  - CPS transformation
+    + The program is transformed to only use continuations which can
+      be converted into simple jumps instead of function calls with a
+      control stack.
+  - Closure conversion
+    + Free variables are packaged up and passed as arguments to
+      functions.
+    + Existential types are used to hide the extra arguments to allow
+      functions that had the same types before to still agree.
+    + Type arguments are just substituted (I think because these should be static?)
+  - Hoisting
+    + Closure conversion makes every function a closed term, this just
+      lifts these functions to a higher level.
+  - Allocation
+    + Make allocations for tuple types explicit.
+    + Types keep track of when variables are initialized
+    + Reordering can occur, but the segments of the tuple can only be
+      projected if the variable is actually
+  - Code generation
+    + largely a syntactic transformation from the previous language.
+
+* Questions
+
+  - I'm actually a little confused about the distinction between PCC
+    and TAL. It seems like they can be roughly the same depending on
+    the type systems involved?
+    + This is further conflated by the fact that they mention typed
+      object files (8.1) which sounds like it would be really similar
+      to the PCC binaries.
