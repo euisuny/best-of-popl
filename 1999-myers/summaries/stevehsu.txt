@@ -1,0 +1,12 @@
+A type in JFlow includes a Java type and a label, which represents permission
+to access information from program variables.  Each statement has a
+program-counter label (pc), which is used to check implicit flow (information
+flow through control flow).
+
+JFlow has run-time labels.  Since labels are stored in variables (which have
+labels), a label variable represents a label and contains a (possibly
+different) label.
+
+Classes can be parameterized by labels.  Subtyping is invariant in label
+paremeters, meaning that {L1} \sqsubseteq {L2} does to imply T[{L1}] \leq
+T[{L2}].
