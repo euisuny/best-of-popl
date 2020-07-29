@@ -2,6 +2,15 @@
 
 (Nowadays called Pure Type Systems (PTS))
 
+---
+
+One-sentence opinion: After reading this paper, I feel a little more
+knowledgeable (having read the main ideas elsewhere) but also left with much
+more to think about, unsatisfied from the lack of non-technical, synthetic
+discussion.
+
+---
+
 The beginning makes me super curious about the historical context
 originally motivating the various corners of the cube.
 The three corners of the cube I'm somewhat familiar with are LambdaArrow
@@ -51,13 +60,13 @@ I'm not even sure how to see STLC from (s1, s2) = (٭, ٭):
 it clearly contains STLC, but it doesn't seem to explicitly forbid
 dependencies.
 
-For (◻, ٭), `A` is a kind, like ٭, and (pi x : ٭, B) is
+For (◻, ٭), `A` is a kind, like ٭: (pi x : ٭, B) is
 the type of a polymorphic term.
 
-For (◻, ◻), both `A` and `B` are kinds, so we can write (pi x : ٭, ٭),
+For (◻, ◻), both `A` and `B` are kinds, so we can write the kind (pi x : ٭, ٭) : ◻,
 i.e., (٭ -> ٭), therefore we can define and abstract over type constructors.
 
-For (٭, ◻), we can write functions of type (A -> ٭), which are dependent types.
+For (٭, ◻), we can write functions of type/kind (A -> ٭), which are dependent types.
 
 ---
 
@@ -76,7 +85,7 @@ Uh, yeah, so obvious.
 
 Section 4
 
-The syntax of a logic is presented as an elementary language language
+The syntax of a logic is presented as an elementary language
 of terms (atoms and applications of function symbols)
 and a first-order language of formulas (relations on terms, connectives,
 quantification on values (for predicate logic)).
