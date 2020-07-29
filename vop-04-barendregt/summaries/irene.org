@@ -1,0 +1,21 @@
+* Introduction to Generalized Type Systems
+
+This paper offer a clean presentation of the lambda cube, building up to the theory of constructions, discusses
+generalized type systems, and an exposition of propositions-as-types, exploring the corresponding intuitionistic
+logical systems that can be derived from the cube.
+
+
+The crux of expressing the various calculi represented by the lambda calculus is by extending the 
+lambda calculus with a product type and defining \Pi- and \lambda- rules with a set rule of pairs that either
+express a type (*) or a term([ ]).
+
+Section 2 explains the derivation of standard theorems, such as confluence (2.3 Church-Rosser Theorem), 
+strong normalization (2.5), and unicity of types (2.6)
+
+Section 3 discusses *generalized type systems*, introducing _axioms_ and a third label for sorts (s3), which I'm not sure
+why they introduce(the motivation seems to be that it's generalizing the formalization in Section 2, 
+but they do not present any calculi that is in need of a `s3` that is distinct from either `s1` or `s2`).
+
+The mention on Girard's paradox (type-theoretic analogue to Russell's paradox) is interesting, although it seemed a bit
+rough for them to throw around statements such as (\lambda U minus the rule (\Delta, *) is inconsistent).
+(What is \Delta?)
