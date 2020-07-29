@@ -72,4 +72,71 @@ If we forbid those, do we recover unicity?
 
 Uh, yeah, so obvious.
 
+---
 
+Section 4
+
+The syntax of a logic is presented as an elementary language language
+of terms (atoms and applications of function symbols)
+and a first-order language of formulas (relations on terms, connectives,
+quantification on values (for predicate logic)).
+
+The translation of terms and formulas to GTS is straightforward because
+it is all simply typed.
+It's the translation of derivations that really makes use of the expressiveness
+of GTS, in particular by forming (dependent) functions.
+
+The "proposition-as-types" correspondence shows that
+
+1. intuitionistic logic is isomorphic to a particular GTS;
+2. there is a forgetful morphism from that GTS to one of the corners of the lambda cube
+
+Also, if we distinguish propositional vs predicate logic,
+predicate logic corresponds to the four corners with the (٭, ◻) rule
+(predicates as dependent types).
+
+Soundness holds (provability of a proposition implies inhabitedness
+when viewed as a type), but the converse does not in general, and the given
+counterexample is between lambda-C (CoC) and its logical counterpart.
+The idea behind the counterexample is that the following proposition
+has different meanings when interpreted as a proposition or as a type:
+
+  forall (P Q : Type), (P <-> Q) -> P = Q
+
+The logician's way to read it is that logically equivalent propositions are
+equal, which is true in a reasonably large class of models.
+
+The programmer's way to read it implies that all inhabited types are equal,
+which is a really bad property to have.
+
+> (definition of all 8 logics)
+
+So in the part of the section before that he was actually specifically
+talking about PRED and lambda-P. When generalizing to the remaining logics,
+they are actually *defined* as their corresponding GTSs.
+
+It appears that propositional logics actually are identical to their
+corresponding lambda calculi.
+It is predicate logics that require an extra sort to keep functions
+first-order.
+
+A reference mentioned near the end looks particularly intriguing:
+
+> In Leivant (1989) interesting use has been made of the propositions-as-types
+> interpretation concerning the representation of data types.
+
+> "Contracting proofs to programs", Daniel Leivant, 1989, in Logic and Computer Science
+
+A few appetizing quotes:
+
+> The main novelties, compared to previous works on extracting algorithms
+> from proofs, are the reading of reductions themselves as programs, and that
+> instead of a constructive reading of ∃, we use a Leibnitzian view of objects
+> as properties.
+> (Abstract)
+
+> In defining the [Curry-Howard] isomorphism for quantifiers, Howard was led to
+> defining richer type structures, with dependent type operations.
+> (...) We pursue a dual approach: rather than enriching the type structure to
+> match logic, we impoverish logic to match the type structure.
+> (Section 1.2)
