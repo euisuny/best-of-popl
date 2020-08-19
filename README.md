@@ -44,11 +44,11 @@ Break from BOP. Also includes not very old papers.
 
 - Thomas Johnsson. **Lambda Lifting: Transforming Programs to Recursive Equations** (1985).
 
-- Derek Dreyer. **Understanding and Evolving the ML Module System** (2005).
+- Derek Dreyer. **Understanding and Evolving the ML Module System** (thesis, 2005).
 
 - Henk Barendregt. **Introduction to Generalized Type Systems** (1991).
 
-- Amal Ahmed. **Semantics of Types for Mutable State** (2004).
+- Amal Ahmed. **Semantics of Types for Mutable State** (thesis, 2004).
 
 ## Meetings -- Fall 2020
 
