@@ -36,6 +36,20 @@ We originally went chronologically (oldest papers first), but starting in March 
 
 May 13 is our last meeting for the spring. We will continue meetings in fall 2020!
 
+## Very Old Papers -- Summer 2020
+
+Break from BOP. Also includes not very old papers.
+
+- Thierry Coquand. **The Calculus of Constructions** (1988).
+
+- Thomas Johnsson. **Lambda Lifting: Transforming Programs to Recursive Equations** (1985).
+
+- Derek Dreyer. **Understanding and Evolving the ML Module System** (2005).
+
+- Henk Barendregt. **Introduction to Generalized Type Systems** (1991).
+
+- Amal Ahmed. **Semantics of Types for Mutable State** (2004).
+
 ## Meetings -- Fall 2020
 
 TBD.
