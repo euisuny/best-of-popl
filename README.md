@@ -8,7 +8,7 @@ Our goal is to ask *fun*damental questions about the principles of programming l
 
 ## Meetings -- Spring 2020
 
-We originally went chronologically (oldest papers first), but starting in March we had some meetings to discuss more recent papers. 
+We originally went chronologically (oldest papers first), but starting in March we had some meetings to discuss more recent papers.
 
 - *Jan 29, 2020:* Simon Peyton Jones and Philip Wadler. **Imperative Functional Programming** (1993).
 
@@ -34,8 +34,6 @@ We originally went chronologically (oldest papers first), but starting in March 
 
 - *May 13, 2020:* Compcert! Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
 
-May 13 is our last meeting for the spring. We will continue meetings in fall 2020!
-
 ## Very Old Papers -- Summer 2020
 
 Break from BOP. Also includes not very old papers.
@@ -52,20 +50,18 @@ Break from BOP. Also includes not very old papers.
 
 ## Meetings -- Fall 2020
 
-TBD.
+Back to BOP papers, going chronologically again.
 
-## Unplanned
+- *Sep 9, 2020:* Luca Cardelli and Andrew D. Gordon. **Anytime, Anywhere: Modal Logics for Mobile Ambients** (2000).
 
-- Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
+- *Sep 23, 2020:* George C. Necula, Scott McPeak, and Westley Weimer. **CCured: Type-Safe Retrofitting of Legacy Code** (2002).
 
-- Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
+- *Oct 7, 2020:* David F. Bacon, Perry Cheng, VT Rajan. **A real-time garbage collector with low overhead and consistent utilization** (2003).
 
-- Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
+- *Oct 21, 2020:* Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
 
-- Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
+- *Nov 4, 2020:* Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
 
-- David F. Bacon, Perry Cheng, VT Rajan. **A real-time garbage collector with low overhead and consistent utilization** (2003).
+- *Nov 18, 2020:* Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
 
-- George C. Necula, Scott McPeak, and Westley Weimer. **CCured: Type-Safe Retrofitting of Legacy Code** (2002).
-
-- Luca Cardelli and Andrew D. Gordon. **Anytime, Anywhere: Modal Logics for Mobile Ambients** (2000).
+- *Dec 2, 2020:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
