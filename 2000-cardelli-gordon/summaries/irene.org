@@ -9,8 +9,8 @@ but reading this is making me curious about the calculus as well.
 One thing that I'm curious about is the difference in expressitivity between
 the mobility in the Ambient Calculus and the Pi-Calculus.
 The differences in *mobility* is here is that:
-** Ambient Calculus: processes move, in the spatial (physical) space of locations
-** Pi Calculus: links move, in the virtual space of linked processes
+- Ambient Calculus: processes move, in the spatial (physical) space of locations
+- Pi Calculus: links move, in the virtual space of linked processes
 (quoting Milner's pi-calc book, here)
 
 What is the notion of bisimulation on this reduction strategy?
