@@ -6,7 +6,7 @@ Modal logic is amazing!!!
 
 Basically this paper is about defining a modal logic which is both temporal and spatial (in contrast to temporal logic, where possible worlds are only organized in time and not in space). Space is hierarchical: there are different locations, which have sublocations, and so on.
 
-The paper gives a lot more formal detail, as well as gives some formal deductions in this modal logic and ideas for applications, which I didn't read in detail.
+The paper gives a lot more formal detail, and even gives some formal deductions in this modal logic. It also describes (and possibly fleshes out somewhat -- I didn't read any of the technical sections) ideas for applications. In general, it looks like a nice paper and is presented elegantly.
 
 The interest at the time (and the influence of the paper) seems to have been to model a notion of *mobility* of computations, which was thought to be a good way of thinking about distributed systems, and in particular distributed systems security.
 
