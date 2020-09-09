@@ -1,0 +1,28 @@
+* Anytime, Anywhere: Modal Logics for Mobile Ambients
+
+This paper describes the Ambient Calculus, which takes in account the mobility
+of processes in the space of spatial (physical) locations.
+
+The focus on this paper really seems to be the logics than the calculus itself,
+but reading this is making me curious about the calculus as well.
+
+One thing that I'm curious about is the difference in expressitivity between
+the mobility in the Ambient Calculus and the Pi-Calculus.
+The differences in *mobility* is here is that:
+** Ambient Calculus: processes move, in the spatial (physical) space of locations
+** Pi Calculus: links move, in the virtual space of linked processes
+(quoting Milner's pi-calc book, here)
+
+What is the notion of bisimulation on this reduction strategy?
+I was almost expecting an LTS to be described here, with an up-to bisimulation relation.
+
+I was a bit surprised by the (Red Amb) reduction rule :
+P -> Q => n [P] -> n [Q], this seems a bit powerful, in the sense that
+the ambient does not effect the reduction behavior at all.
+
+The satisfaction rules in Section 3.2 were satisfying to see---I haven't seen
+formalizations of modal logics before, but the fact that it could be stated 
+definitionally using such predicate calculus makes a lot of sense, and is pretty neat.
+
+I enjoyed the cute example, this is probably one of my favorite parts about process calculi.
+Here, it hits two sweet spots : proofs-as-programs and a kernel model of computation (as its virtue of being a calculus).
