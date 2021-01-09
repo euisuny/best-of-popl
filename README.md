@@ -56,12 +56,18 @@ Back to BOP papers, going chronologically again.
 
 - *Sep 23, 2020:* George C. Necula, Scott McPeak, and Westley Weimer. **CCured: Type-Safe Retrofitting of Legacy Code** (2002).
 
-- *Oct 7, 2020:* David F. Bacon, Perry Cheng, VT Rajan. **A real-time garbage collector with low overhead and consistent utilization** (2003).
+Migrated to local HoTT Reading Group.
 
-- *Oct 21, 2020:* Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
+## Meetings -- Spring 2021
 
-- *Nov 4, 2020:* Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
+Picking back up from where we were.
 
-- *Nov 18, 2020:* Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
+- *Jan 11, 2021:* David F. Bacon, Perry Cheng, VT Rajan. **A real-time garbage collector with low overhead and consistent utilization** (2003).
 
-- *Dec 2, 2020:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
+- *Jan 25, 2021:* Thomas Henzinger, Ranjit Jhala, Rupak Majumdar, Kenneth McMillan. **Abstractions from proofs** (2004).
+
+- *Feb 8, 2021:* Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
+
+- *Feb 22, 2021:* Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
+
+- *March 8, 2021:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
