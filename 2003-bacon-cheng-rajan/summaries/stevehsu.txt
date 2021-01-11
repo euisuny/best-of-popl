@@ -1,0 +1,13 @@
+The authors' garbage collector is the first Google search result for
+"java real time garbage collector":
+https://researcher.watson.ibm.com/researcher/view_group.php?id=174
+
+Actually getting real-time guarantees out of their approach seems to require
+bounds on the amount of live memory, the allocation rate, and the garbage
+collector processing rate for each run of the program. The user already has to
+bound the heap size when they start the JVM, and the creators of the garbage
+collector can empirically estimate the garbage collector processing rate.
+Bounding the allocation rate seems, on the other hand, seems like it would
+take substantial effort. I guess this works for single-core embedded systems,
+where the programmer presumably cares about these things, but it does seem
+like an onerous requirement.
