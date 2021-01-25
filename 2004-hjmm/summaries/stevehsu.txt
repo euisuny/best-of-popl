@@ -1,0 +1,10 @@
+The paper introduces a technique that can be used in the abstraction
+refinement step of counterexample guided abstraction refinement (CEGAR).
+Given a spurious counterexample, the paper uses a proof of infeasibility to
+produce predicates useful for refuting the counterexample together with
+program locations where the predicates are relevant to the analysis.
+
+How difficult is it to write program specifications in their logic, which
+according to section 3 seems to be FOL with linear inequalities?
+Are there reasonable program specifications that can't be written in this
+logic?
