@@ -1,0 +1,8 @@
+The paper describes a method for enforcing JavaScript security policies by
+instrumenting the JavaScript code. The authors define a subset of JavaScript,
+called CoreScript, for which they define a semantics, and an instrumentation
+procedure (they also have a "mostly straightforward" extension of these
+semantics and the instrumentation to JavaScript). They prove that code
+instrumented using a security policy will respect that policy, and they show
+experimentally that their method provides client-side protection against
+cross-site scripting, spammed pop-up windows, and malicious redirects.
