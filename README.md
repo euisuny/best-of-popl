@@ -68,8 +68,8 @@ Picking back up from where we were.
 
 - *Feb 15, 2021:* Dachuan Yu, Ajay Chander, Nayeem Islam, Igor Serikov. **JavaScript Instrumentation for Browser Security** (2007).
 
-- *March 1, 2021:* Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
+- *March 8, 2021:* Kohei Honda, Nobuko Yoshida, Marco Carbone. **Multiparty asynchronous session types** (2008).
 
-- *March 15, 2021:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
+- *March 22, 2021:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
 
-- *March 22, 2021:* Sumit Gulwani. **Automating string processing in spreadsheets using input-output examples** (2011).
+- *April 5, 2021:* Sumit Gulwani. **Automating string processing in spreadsheets using input-output examples** (2011).
