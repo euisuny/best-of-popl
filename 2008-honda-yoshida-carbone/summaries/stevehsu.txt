@@ -1,0 +1,8 @@
+The paper presents multi-party asynchronous session types.
+It first defines global types for sessions,
+which describe all participants' interactions,
+rather than just describing the interactions pairwise
+or just the activities of one process.
+(It can then project these global types onto each participant
+to recover local views of the protocol.)
+This presentation more naturally expresses multi-party protocols.
