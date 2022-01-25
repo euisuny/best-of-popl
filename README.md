@@ -4,9 +4,15 @@ Welcome to BOP (Best of POPL).
 
 Our goal is to ask *fun*damental questions about the principles of programming languages, by looking at the ["Most Influential Papers"](https://www.sigplan.org/Awards/POPL/) from POPL. To encourage discussion and participation, we’re mandating a rule for every reading group member to write up a short memoir (*2~3 paragraphs, including a cursory overview with nibbles of thoughts and questions*) of the reading for every meeting. This repository is the home for our memoirs.
 
-**When? Where?**: Approximately Every other Wednesday at 10am. ~~Levine basement (057).~~ **Online on Zoom.**
+## BOP Reunion
 
-## Meetings -- Spring 2020
+**🎉 Reunion meetings every year! 🎉** These are held in late January, after the most influential paper is announced at POPL.
+
+## Meeting Log
+
+The original BOP was held from Spring 2020 to Spring 2021, approximately every other Wednesday at 10am, at first in the Levine basement (057), then online on Zoom.
+
+### Spring 2020
 
 We originally went chronologically (oldest papers first), but starting in March we had some meetings to discuss more recent papers.
 
@@ -34,7 +40,7 @@ We originally went chronologically (oldest papers first), but starting in March 
 
 - *May 13, 2020:* Compcert! Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
 
-## Very Old Papers -- Summer 2020
+### Very Old Papers -- Summer 2020
 
 Break from BOP. Also includes not very old papers.
 
@@ -48,7 +54,7 @@ Break from BOP. Also includes not very old papers.
 
 - Amal Ahmed. **Semantics of Types for Mutable State** (thesis, 2004).
 
-## Meetings -- Fall 2020
+### Fall 2020
 
 Back to BOP papers, going chronologically again.
 
@@ -58,7 +64,7 @@ Back to BOP papers, going chronologically again.
 
 Migrated to local HoTT Reading Group.
 
-## Meetings -- Spring 2021
+### Spring 2021
 
 Picking back up from where we were.
 
@@ -73,3 +79,7 @@ Picking back up from where we were.
 - *March 22, 2021:* Saurabh Srivastava, Sumit Gulwani, Jeffrey Foster. **From program verification to program synthesis** (2010).
 
 - *April 5, 2021:* Sumit Gulwani. **Automating string processing in spreadsheets using input-output examples** (2011).
+
+### BOP Reunions -- Spring 2022 to present
+
+- *January 27, 2021 at 1pm:* Thomas Austin and Cormac Flanagan. **Multiple Facets for Dynamic Information Flow** (2012).
