@@ -40,7 +40,7 @@ We originally went chronologically (oldest papers first), but starting in March 
 
 - *May 13, 2020:* Compcert! Xavier Leroy. **Formal certification of a compiler back-end or: programming a compiler with a proof assistant** (2006).
 
-### Very Old Papers -- Summer 2020
+### Summer 2020 -- Very Old Papers
 
 Break from BOP. Also includes not very old papers.
 
@@ -80,6 +80,6 @@ Picking back up from where we were.
 
 - *April 5, 2021:* Sumit Gulwani. **Automating string processing in spreadsheets using input-output examples** (2011).
 
-### BOP Reunions -- Spring 2022 to present
+### Spring 2022 to present -- BOP Reunions
 
-- *January 27, 2021 at 1pm:* Thomas Austin and Cormac Flanagan. **Multiple Facets for Dynamic Information Flow** (2012).
+- *January 27, 2022 at 1pm:* Thomas Austin and Cormac Flanagan. **Multiple Facets for Dynamic Information Flow** (2012).
