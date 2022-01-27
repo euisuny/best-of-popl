@@ -1,0 +1,6 @@
+In the description of the naive strategy on the third page,
+the paper says code blocks conditioned on a private variable
+should not appear to execute from the POV of a public observer.
+Is it possible to change the semantics so that
+it looks plausible to a public observer that the block
+may or may not have executed?
